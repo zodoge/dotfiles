@@ -26,12 +26,12 @@ if [[ -d "$HOME/projects/sublime-text" ]]; then
   export SUBL_DIR="$HOME/projects/sublime-text"
 fi
 
-if [[ -f "$HOME/.env/penv" ]]; then
-  source "$HOME/.env/penv"
+if [[ -f "$HOME/.env/perso.env" ]]; then
+  source "$HOME/.env/perso.env"
 fi
 
-if [[ -f "$HOME/.env/wenv" ]]; then
-  source "$HOME/.env/wenv"
+if [[ -f "$HOME/.env/work.env" ]]; then
+  source "$HOME/.env/work.env"
 fi
 
 # set PATH so it includes user's private bin if it exists

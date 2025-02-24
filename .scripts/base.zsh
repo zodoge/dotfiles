@@ -10,7 +10,7 @@ key[Delete]="${terminfo[kdch1]}"
 key[Up]="${terminfo[kcuu1]}"
 key[Down]="${terminfo[kcud1]}"
 key[Left]="${terminfo[kcub1]}"
-key[Right]="${terminfo[kcuf1]}"
+key[Right]="${terminfo[kcuf1]}" 
 key[PageUp]="${terminfo[kpp]}"
 key[PageDown]="${terminfo[knp]}"
 key[Shift-Tab]="${terminfo[kcbt]}"
@@ -39,7 +39,6 @@ add-zle-hook-widget -Uz zle-line-init zle_application_mode_start
 add-zle-hook-widget -Uz zle-line-finish zle_application_mode_stop
 fi
 
-
 alias reload="exec zsh -l"
 # We prefer ripgrep
 if command -v rg &> /dev/null; then
@@ -55,17 +54,3 @@ if command -v bat &> /dev/null; then
   alias -g -- -h='-h 2>&1 | bat --language=help --style=plain'
   alias -g -- --help='--help 2>&1 | bat --language=help --style=plain'
 fi
-
-find_files() {
-  # "$1" => directory, "$2" => extension of files to source
-  find -L "$1" -type f -name "*.$2" | while read -r file; do
-    echo "$file"
-  done
-}
-
-source_files() {
-  # "$1" => directory, "$2" => extension of files to source
-  find -L "$1" -type f -name "*.$2" | while read -r file; do
-    source "$file"
-  done
-}

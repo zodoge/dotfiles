@@ -24,9 +24,9 @@ source "${ZINIT_HOME}/zinit.zsh"
 zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
-zinit light Aloxaf/fzf-tab
 zinit light MichaelAquilina/zsh-you-should-use
 zinit light fdellwing/zsh-bat
+zinit light Aloxaf/fzf-tab
 
 # Add in snippets
 zinit snippet OMZP::git
@@ -68,12 +68,12 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Alias
 alias ls='ls --color'
-# Shell integrations
-eval "$(fzf --zsh)"
-eval "$(zoxide init --cmd cd zsh)"
-eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
-
 # Add in personal scripts
 source "$HOME/.scripts/base.zsh"
+source "$HOME/.scripts/sh/base.sh"
+source_files "$HOME/.scripts/sh/common/" "sh"
 
-source_files "$HOME/.scripts/sh/common/"
+# Shell integrations
+eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
+eval "$(fzf --zsh)"
+eval "$(zoxide init --cmd cd zsh)"
