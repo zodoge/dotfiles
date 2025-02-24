@@ -1,0 +1,20 @@
+{
+    "editor.fontFamily": "'monospace', monospace, 'MonoLisa Nerd Font Mono'",
+    "editor.fontSize": 16,
+    "editor.lineHeight": 1.6,
+    "editor.minimap.enabled": false,
+    "editor.rulers": [90, 120],
+    "git.openRepositoryInParentFolders": "always",
+    "window.autoDetectColorScheme": true,
+    "[shellscript]": {
+        "files.eol": "\n",
+        "editor.defaultColorDecorators": "never",
+        "editor.tabSize": 2
+    },
+    "workbench.preferredLightColorTheme": "GitHub Light Default",
+    "files.dialog.defaultPath": "/home/donald/projects",
+    "makefile.configureOnOpen": true,
+    "workbench.preferredDarkColorTheme": "GitHub Dark Default",
+    "workbench.preferredHighContrastColorTheme": "GitHub Dark High Contrast",
+    "workbench.preferredHighContrastLightColorTheme": "GitHub Light High Contrast"
+}

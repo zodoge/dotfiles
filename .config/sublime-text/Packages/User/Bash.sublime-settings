@@ -1,0 +1,7 @@
+// These settings override both User and Default settings for the Bash syntax
+{
+	"tab_size": 2,
+	"translate_tabs_to_spaces": true,
+    "font_face": "JetBrains Mono NL",
+    "font_size": 15
+}

@@ -1,0 +1,1 @@
+wordchars=_.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789

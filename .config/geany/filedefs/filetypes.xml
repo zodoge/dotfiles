@@ -1,0 +1,10 @@
+[build-menu]
+FT_00_LB=Lint
+FT_00_CM=xmllint --noout "%f"
+FT_00_WD=
+FT_01_LB=Format
+FT_01_CM=xmllint --format "%f"
+FT_01_WD=
+FT_02_LB=_Lint
+FT_02_CM=
+FT_02_WD=

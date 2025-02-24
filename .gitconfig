@@ -1,0 +1,7 @@
+[user]
+	email = donoeg@gmail.com
+	name = donoeg
+[includeIf "gitdir:~/projects/work/"]
+    path = ~/projects/work/.gitconfig
+[init]
+	defaultBranch = main

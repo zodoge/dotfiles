@@ -1,0 +1,22 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Dockerfile Syntax Highlighting",
+		"Dracula Color Scheme",
+		"GitHub Theme",
+		"LSP",
+		"LSP-dockerfile",
+		"LSP-json",
+		"LSP-pylsp",
+		"LSP-pyright",
+		"Package Control",
+		"Pretty Shell",
+		"Terraform",
+		"TOML",
+		"ZSH",
+	],
+}
