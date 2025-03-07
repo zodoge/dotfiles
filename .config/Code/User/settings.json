@@ -1,5 +1,5 @@
 {
-    "editor.fontFamily": "'monospace', monospace, 'MonoLisa Nerd Font Mono'",
+    "editor.fontFamily": "'Mono','monospace', monospace, 'MonoLisa Nerd Font Mono'",
     "editor.fontSize": 16,
     "editor.lineHeight": 1.6,
     "editor.minimap.enabled": false,
@@ -11,10 +11,14 @@
         "editor.defaultColorDecorators": "never",
         "editor.tabSize": 2
     },
-    "workbench.preferredLightColorTheme": "GitHub Light Default",
+    "workbench.preferredLightColorTheme": "GitHub Light",
     "files.dialog.defaultPath": "/home/donald/projects",
     "makefile.configureOnOpen": true,
-    "workbench.preferredDarkColorTheme": "GitHub Dark Default",
+    "workbench.preferredDarkColorTheme": "GitHub Dark Dimmed",
     "workbench.preferredHighContrastColorTheme": "GitHub Dark High Contrast",
-    "workbench.preferredHighContrastLightColorTheme": "GitHub Light High Contrast"
+    "workbench.preferredHighContrastLightColorTheme": "GitHub Light High Contrast",
+    "[terraform]": {
+        "editor.tabSize": 2,
+        "editor.formatOnSave": true
+    }
 }

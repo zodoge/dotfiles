@@ -15,7 +15,7 @@ case "$(ps -p$$ -ocommand)" in
   setopt pushdminus
 
   compdef _dirs d
-  alias -g ..='..'
+  # alias -g ..='..'
   alias -g ...='../..'
   alias -g ....='../../..'
   alias -g .....='../../../..'

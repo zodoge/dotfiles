@@ -1,8 +1,5 @@
 typeset -U PATH path
 
-
-export XDG_DATA_HOME="$HOME/.config"
-
 # Display timestamps for each command
 export HIST_STAMPS="%T %d.%m.%y"
 export HISTSIZE=10000
@@ -12,7 +9,7 @@ export HISTDUP=erase
 # Ignore these commands in history
 export HISTORY_IGNORE="(ls|pwd|cd)*"
 
-export PLUGDIR="$HOME/.zsh"
+# export PLUGDIR="$HOME/.zsh"
 
 if [[ -d "$HOME/projects/perso" ]]; then
   export PGITDIR="$HOME/projects/perso"

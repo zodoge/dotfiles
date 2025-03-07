@@ -12,3 +12,5 @@ PS1='[\u@\h \W]\$ '
 source "$HOME/.zshenv"
 source "$HOME/.scripts/sh/base.sh"
 source_files "$HOME/.scripts/sh/common/" "sh"
+
+complete -C /usr/bin/terraform terraform

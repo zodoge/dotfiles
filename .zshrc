@@ -5,8 +5,9 @@
 #   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 # fi
 
-export XDG_DATA_HOME="$HOME/.config"
+# export XDG_DATA_HOME="$HOME/.config"
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+
 
 # Download Zinit, if it is not there yet
 if [ ! -d "$ZINIT_HOME" ]; then
@@ -35,6 +36,8 @@ zinit snippet OMZP::archlinux
 zinit snippet OMZP::command-not-found
 zinit snippet OMZP::extract
 zinit snippet OMZP::history
+zinit snippet OMZP::z
+zinit snippet OMZP::terraform
 
 # Load completions
 autoload -U compinit && compinit
@@ -77,3 +80,6 @@ source_files "$HOME/.scripts/sh/common/" "sh"
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/bin/terraform terraform
